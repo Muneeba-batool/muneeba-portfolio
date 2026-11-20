@@ -1,0 +1,82 @@
+.t-Header-branding {
+    display: none !important;
+}
+
+
+
+// /* Top Navigation Bar Container */
+// .t-Header,
+// .t-Header-nav,
+// .t-Header-nav-list,
+// .t-NavigationMenu,
+// .t-NavigationMenu .a-MenuBar {
+//     background-color: #12151c !important;
+//    border: none !important;
+//     box-shadow: none !important;
+// }
+
+// /* Menu Items & Links */
+// .t-Header-nav .a-MenuBar-item,
+// .t-Header-nav .a-MenuBar-label,
+// .t-NavigationMenu a {
+//     background-color: transparent !important;
+//     color: #e6edf3 !important;
+// }
+
+// /* Hover / Active State */
+// .t-Header-nav .a-MenuBar-item:hover,
+// .t-Header-nav .a-MenuBar-item:hover .a-MenuBar-label,
+// .t-Header-nav .a-MenuBar-item.is-selected .a-MenuBar-label,
+// .t-NavigationMenu a:hover {
+//     background-color: #12151C !important;
+//     color: #ffffff !important;
+// }
+
+
+
+
+/* Top Navigation Bar Background */
+.t-Header,
+.t-Header-nav,
+.t-Header-nav-list,
+.t-NavigationMenu,
+.t-NavigationMenu-list,
+.t-NavigationMenu .a-MenuBar {
+    background-color: #12151C !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Menu Items Borders & Divider Lines Remove */
+.t-Header-nav .a-MenuBar-item,
+.t-Header-nav .a-MenuBar-item::before,
+.t-Header-nav .a-MenuBar-item::after,
+.t-Header-nav .a-MenuBar-label,
+.t-Header-nav .a-MenuBar-label::before,
+.t-Header-nav .a-MenuBar-label::after,
+.t-NavigationMenu li,
+.t-NavigationMenu li::before,
+.t-NavigationMenu li::after,
+.t-NavigationMenu a,
+.t-NavigationMenu a::before,
+.t-NavigationMenu a::after {
+    border: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
+/* Menu Text & Hover / Active Colors */
+.t-Header-nav .a-MenuBar-label,
+.t-NavigationMenu a {
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+.t-Header-nav .a-MenuBar-item:hover .a-MenuBar-label,
+.t-Header-nav .a-MenuBar-item.is-selected .a-MenuBar-label,
+.t-NavigationMenu a:hover {
+    color: #ffffff !important;
+    background-color: #12151c !important;
+}
