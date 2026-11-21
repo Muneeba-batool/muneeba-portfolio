@@ -3,60 +3,107 @@
 ================================= */
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Navbar ke neeche wale light gap ke liye */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Edge-to-Edge Top Navbar (No Left / Right / Top Gap) */
 .apex-navbar {
     width: 100%;
-    height: 48px;
-    padding: 0 24px;
+    height: 46px;
+    padding: 0 22px;
+    margin: 0 0 12px 0; /* Sirf neeche thori si space jaisa APEX mein hota hai */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Left aligned like APEX */
-    background-color: #13161b;
+    justify-content: flex-start;
+    background-color: #12151a;
     border-bottom: 1px solid #22262e;
     position: sticky;
     top: 0;
     z-index: 9999;
-    box-sizing: border-box;
 }
 
 .apex-nav-menu {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 24px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.apex-nav-menu li a {
-    color: #e2e8f0;
-    text-decoration: none;
-    font-size: 13.5px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    transition: color 0.2s ease;
+.apex-nav-menu li {
+    margin: 0;
+    padding: 0;
 }
 
-.apex-nav-menu li a:hover,
-.apex-nav-menu li a:focus {
+.apex-nav-menu li a {
+    display: inline-block;
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    line-height: 1.2;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.apex-nav-menu li a:hover {
     color: #ffffff;
+}
+
+/* Click / Active par APEX jaisa crisp white border */
+.apex-nav-menu li a:focus,
+.apex-nav-menu li a.active {
+    outline: 1px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 0;
+    color: #ffffff;
+}
+
+/* Hero Card ko navbar ke neeche wale gap ke saath align karne ke liye */
+#hero {
+    margin: 0 10px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 
 /* Mobile Responsive */
 @media (max-width: 600px) {
     .apex-navbar {
-        padding: 0 16px;
+        padding: 0 14px;
         height: 44px;
+        margin-bottom: 10px;
     }
+
     .apex-nav-menu {
-        gap: 18px;
+        gap: 14px;
     }
+
     .apex-nav-menu li a {
-        font-size: 13px;
+        font-size: 12.5px;
+        padding: 4px 6px;
+    }
+
+    #hero {
+        margin: 0 6px;
+        border-radius: 10px 10px 0 0;
     }
 }
-
 /* ==================================
    GLOBAL
 ================================== */
