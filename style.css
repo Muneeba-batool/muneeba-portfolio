@@ -50,7 +50,8 @@ body {
     padding: 0;
 }
 
-display: inline-block;
+.apex-nav-menu li a {
+    display: inline-block;
     color: #d2dce6; /* About jaisa simple color */
     text-decoration: none;
     font-size: 13.5px;
@@ -61,8 +62,6 @@ display: inline-block;
     line-height: 1.2;
     outline: none;
     transition: color 0.2s ease;
-.apex-nav-menu li a:hover {
-    color: #ffffff;
 }
 
 .apex-nav-menu li a:hover,
