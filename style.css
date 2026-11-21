@@ -14,10 +14,9 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 58px 0 0 0;
     background-color: #ffffff; /* Navbar ke neeche wale light gap ke liye */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    overflow-x: hidden;
 }
 
 /* Edge-to-Edge Top Navbar (No Left / Right / Top Gap) */
@@ -31,7 +30,7 @@ body {
     justify-content: flex-start;
     background-color: #12151a;
     border-bottom: 1px solid #22262e;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9999;
 }
